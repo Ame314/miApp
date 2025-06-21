@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Tarea</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/app.js" defer></script>
+  
+</head>
+<body>
+
+  <h2>Tarea </h2>
+
+  <div class="tabs">
+    <div class="tab active" data-target="#formulario">Registrar</div>
+    <div class="tab" data-target="#lista">Ver Usuarios</div>
+    <div class="tab" data-target="#buscar-ajedrez">Buscar Usuarios de Ajedrez</div>
+  </div>
+
+  <div class="panel active" id="formulario">
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="text" id="apellido" placeholder="Apellido">
+    <input type="number" id="edad" placeholder="Edad">
+    <input type="email" id="email" placeholder="Email">
+    <button id="guardar">Guardar</button>
+  </div>
+
+  <div class="panel" id="lista">
+    <div id="result"></div>
+  </div>
+
+  <div class="panel" id="buscar-ajedrez">
+    <h3>Buscar Usuarios de Ajedrez</h3>
+    <input type="text" id="buscar-termino" placeholder="Buscar por nombre, apellido o email">
+    <button id="buscar-btn">Buscar</button>
+    <div id="resultados-ajedrez"></div>
+  </div>
+
+  <footer>Ame Grob</footer>
+
+</body>
+</html>
